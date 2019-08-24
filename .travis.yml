@@ -1,0 +1,3 @@
+language: pyhton
+script: 
+   - pyhton -m pytest -v
