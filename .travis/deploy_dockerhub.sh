@@ -7,5 +7,7 @@ else
 	TAG="$TRAVIS_BRANCH"
 fi
 
+echo  $TRAVIS_REPOSLUG:$TAG
+
 docker build -f  Dockerfile -t $TRAVIS_REPOSLUG:$TAG  .
 docker push  $TRAVIS_REPO_SLUG:$TAG
